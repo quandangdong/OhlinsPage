@@ -8,7 +8,11 @@ class Banner extends React.PureComponent {
       <div>
         <div className="relative">
           {/* Image item */}
-          <img className="flex mt-9 rounded-lg" src={MainPic} alt="Banner" />
+          <img
+            className="flex w-full mt-9 rounded-lg"
+            src={MainPic}
+            alt="Banner"
+          />
           {/* Text Item */}
           <div className="absolute bottom-52 left-36 w-12">
             <div className="font-semibold text-zinc-100 text-6xl">

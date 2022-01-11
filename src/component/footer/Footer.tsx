@@ -4,7 +4,7 @@ import { footerLogo } from "../../img/index";
 class Footer extends React.PureComponent {
   render() {
     return (
-      <div className="bg-zinc-600 text-zinc-300 mt-20 rounded-t-lg">
+      <div className="bg-zinc-600 text-zinc-300 mt-20 rounded-t-lg ">
         <div className="flex justify-center gap-14 px-28 py-11">
           {/* column 1 */}
           <div className="mt-6">

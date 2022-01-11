@@ -48,7 +48,7 @@ class Navbar extends React.PureComponent {
                 English
               </li>
               <li>
-                <button className="px-10 py-2 mx-2 rounded-lg bg-zinc-600 text-white text-2xl hover:bg-gray-800 hover:scale-110">
+                <button className="px-10 py-2 mx-2 rounded-lg bg-zinc-600 text-white text-2xl hover:bg-zinc-500 hover:scale-110">
                   Sign in
                 </button>
               </li>

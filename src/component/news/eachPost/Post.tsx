@@ -14,7 +14,7 @@ class Post extends React.PureComponent<{ PostData: PostDetail }> {
       <div>
         <div>
           {/* image */}
-          <div className="relative hover:scale-105 hover:shadow-2xl hover:shadow-slate-900 ">
+          <div className="relative hover:scale-105 hover:duration-500 hover:shadow-2xl hover:shadow-zinc-900 hover:rounded-lg">
             <img
               className="w-80 h-80 rounded-lg object-cover"
               src={this.props.PostData.imgSrc}
