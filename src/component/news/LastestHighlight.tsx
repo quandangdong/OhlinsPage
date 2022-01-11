@@ -33,14 +33,14 @@ class LastestHighlight extends React.PureComponent {
   render() {
     return (
       <div className="mt-20">
-        <div className="">
+        <div>
           <div className="text-6xl uppercase text-zinc-600 font-semibold text-center">
             Lastest highlights
           </div>
 
           <div>
             {/* post 1 */}
-            <div className="flex justify-center gap-20 mt-3">
+            <div className="flex justify-center gap-20 mt-8">
               <Post PostData={this.state.postList[0]} />
               <Post PostData={this.state.postList[1]} />
               <Post PostData={this.state.postList[2]} />

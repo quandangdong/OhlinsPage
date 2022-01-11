@@ -7,7 +7,7 @@ class Navbar extends React.PureComponent {
       <div>
         {/* // Navbar container */}
         <div className="flex justify-between">
-          <ul className="inline-flex justify-items-center gap-5 text-3xl">
+          <ul className="inline-flex justify-items-center gap-10 text-3xl">
             {/* Logo */}
             <li>
               <a href="/">
@@ -15,23 +15,23 @@ class Navbar extends React.PureComponent {
               </a>
             </li>
             {/* Navigate */}
-            <li className="my-auto box-border text-zinc-600 ">
+            <li className="my-auto box-border text-zinc-600 hover:scale-110">
               <a href="/">Overview</a>
             </li>
-            <li className="my-auto text-zinc-600">
+            <li className="my-auto text-zinc-600 hover:scale-110">
               <a href="/">Products</a>
             </li>
-            <li className="my-auto text-zinc-600">
+            <li className="my-auto text-zinc-600 hover:scale-110">
               <a href="/">Support</a>
             </li>
-            <li className="my-auto text-zinc-600">
+            <li className="my-auto text-zinc-600 hover:scale-110">
               <a href="/">About</a>
             </li>
           </ul>
 
           {/* Language and Sign in */}
           <div className="my-auto">
-            <ul className="flex justify-items-center gap-5 text-3xl">
+            <ul className="flex justify-items-center gap-10 text-3xl">
               <li className="my-auto flex text-zinc-600">
                 <svg
                   className="w-6 h-6 my-auto mr-2"
@@ -48,7 +48,7 @@ class Navbar extends React.PureComponent {
                 English
               </li>
               <li>
-                <button className="px-10 py-2 mx-2 rounded-lg bg-zinc-600 text-white text-2xl hover:bg-gray-800">
+                <button className="px-10 py-2 mx-2 rounded-lg bg-zinc-600 text-white text-2xl hover:bg-gray-800 hover:scale-110">
                   Sign in
                 </button>
               </li>

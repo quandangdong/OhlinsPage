@@ -14,7 +14,7 @@ class Banner extends React.PureComponent {
             <div className="font-semibold text-zinc-100 text-6xl">
               Motocycle product
             </div>
-            <button className="w-44 py-2 mt-6 rounded-lg bg-zinc-600 text-2xl text-white font-semibold">
+            <button className="w-44 py-2 mt-6 rounded-lg bg-zinc-600 text-2xl text-white font-semibold hover:scale-110">
               Details
             </button>
           </div>
