@@ -12,6 +12,7 @@ import technical5 from '../img/technical5.png';
 import whyOhlins1 from '../img/whyOhlins1.jpg';
 import whyOhlins2 from '../img/whyOhlins2.png';
 import whyOhlins3 from '../img/whyOhlins3.jpg';
+import footerLogo from '../img/footerLogo.png';
 
 export {
   whyOhlins1,
@@ -27,5 +28,6 @@ export {
   technical2,
   technical3,
   technical4,
-  technical5
+  technical5,
+  footerLogo
 };
