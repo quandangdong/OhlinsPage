@@ -22,16 +22,16 @@ class Navbar extends React.PureComponent {
               </a>
             </li>
             {/* Navigate */}
-            <li className="my-auto box-border text-zinc-600 hover:scale-110">
+            <li className="my-auto text-zinc-600 hover:scale-110 hover:text-shadow-md">
               <a href="/">Overview</a>
             </li>
-            <li className="my-auto text-zinc-600 hover:scale-110">
+            <li className="my-auto text-zinc-600 hover:scale-110 hover:text-shadow-md">
               <a href="/">Products</a>
             </li>
-            <li className="my-auto text-zinc-600 hover:scale-110">
+            <li className="my-auto text-zinc-600 hover:scale-110 hover:text-shadow-md">
               <a href="/">Support</a>
             </li>
-            <li className="my-auto text-zinc-600 hover:scale-110">
+            <li className="my-auto text-zinc-600 hover:scale-110 hover:text-shadow-md">
               <a href="/">About</a>
             </li>
           </ul>
