@@ -14,18 +14,21 @@ class Footer extends React.PureComponent {
                 <img
                   className="w-11"
                   src="https://img.icons8.com/material-rounded/24/000000/facebook.png"
+                  alt="facebook"
                 />
               </li>
               <li>
                 <img
                   className="w-11"
                   src="https://img.icons8.com/ios/50/000000/instagram-new--v3.png"
+                  alt="instagram"
                 />
               </li>
               <li>
                 <img
                   className="w-12"
                   src="https://img.icons8.com/ios/50/000000/youtube-play--v1.png"
+                  alt="youtube"
                 />
               </li>
             </ul>
@@ -34,10 +37,26 @@ class Footer extends React.PureComponent {
           <div className="mt-6">
             <span className="uppercase text-3xl font-semibold">Quick Link</span>
             <ul className="list-disc px-7 text-lg">
-              <li>Overview</li>
-              <li>Product</li>
-              <li>Support</li>
-              <li>About</li>
+              <li>
+                <a className="hover:underline text-zinc-300" href="/">
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a className="hover:underline text-zinc-300" href="/">
+                  Product
+                </a>
+              </li>
+              <li>
+                <a className="hover:underline text-zinc-300" href="/">
+                  Support
+                </a>
+              </li>
+              <li>
+                <a className="hover:underline text-zinc-300" href="/">
+                  About
+                </a>
+              </li>
             </ul>
           </div>
           {/* column 3 */}
@@ -46,8 +65,16 @@ class Footer extends React.PureComponent {
               Policy and Term
             </span>
             <ul className="list-disc px-7 text-lg">
-              <li>Terms and Conditions</li>
-              <li>Privacy Policy</li>
+              <li>
+                <a className="hover:underline text-zinc-300" href="/">
+                  Terms and Conditions
+                </a>
+              </li>
+              <li>
+                <a className="hover:underline text-zinc-300" href="/">
+                  Privacy Policy
+                </a>
+              </li>
             </ul>
           </div>
           {/* column 4 */}

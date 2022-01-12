@@ -1,7 +1,14 @@
 import React from "react";
 import { ohlinsLogo } from "../../img/index";
+import LanguageList from "./languagePopUp/LanguageList";
 
 class Navbar extends React.PureComponent {
+  state = {
+    isLanguagePopUpOpen: false,
+  };
+  handleShowLanguagePopUp = (): void => {
+    this.setState({ isLanguagePopUpOpen: !this.state.isLanguagePopUpOpen });
+  };
   render() {
     return (
       <div>
@@ -32,7 +39,10 @@ class Navbar extends React.PureComponent {
           {/* Language and Sign in */}
           <div className="my-auto">
             <ul className="flex justify-items-center gap-10 text-3xl">
-              <li className="my-auto flex text-zinc-600">
+              <li
+                className="my-auto flex text-zinc-600 relative hover:cursor-pointer"
+                onClick={this.handleShowLanguagePopUp}
+              >
                 <svg
                   className="w-6 h-6 my-auto mr-2"
                   fill="currentColor"
@@ -46,6 +56,9 @@ class Navbar extends React.PureComponent {
                   ></path>
                 </svg>
                 English
+                <div className="absolute top-11 z-50 right-0">
+                  {this.state.isLanguagePopUpOpen ? <LanguageList /> : null}
+                </div>
               </li>
               <li>
                 <button className="px-10 py-2 mx-2 rounded-lg bg-zinc-600 text-white text-2xl hover:bg-zinc-500 hover:scale-110">
