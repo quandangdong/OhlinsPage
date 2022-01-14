@@ -3,9 +3,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      }
+    },
   },
   plugins: [
-    require('tailwindcss-textshadow')
+    require('tailwindcss-textshadow'),
   ],
 }

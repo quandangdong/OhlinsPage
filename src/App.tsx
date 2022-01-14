@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./component/banner/banner";
 import Footer from "./component/footer/Footer";
 import Navbar from "./component/header/Navbar";
+import LoginForm from "./component/login/LoginForm";
 import LastestHighlight from "./component/news/LastestHighlight";
 import Paterners from "./component/parterners/Paterners";
 import SponsorTeam from "./component/sponsorTeam/Sponsor";
@@ -11,7 +12,7 @@ function App() {
   return (
     <div>
       <div className="mx-12 mt-3">
-        <Navbar />
+        {/* <Navbar />
         <Banner />
         <Slide direction="left" duration={2000}>
           <WhyOhlins />
@@ -20,11 +21,13 @@ function App() {
         <Zoom duration={2000}>
           <Paterners />
         </Zoom>
-        <LastestHighlight />
+        <LastestHighlight /> */}
+
+        <LoginForm />
       </div>
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

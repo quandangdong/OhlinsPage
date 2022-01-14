@@ -6,6 +6,7 @@ class Navbar extends React.PureComponent {
   state = {
     isLanguagePopUpOpen: false,
   };
+
   handleShowLanguagePopUp = (): void => {
     this.setState({ isLanguagePopUpOpen: !this.state.isLanguagePopUpOpen });
   };

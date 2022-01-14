@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  whyOhlins1,
-  whyOhlins2,
-  whyOhlins3,
-  technical1,
-} from "../../img/index";
+import { whyOhlins1, whyOhlins2, whyOhlins3 } from "../../img/index";
 import ImageAndText from "./Reasons/ImageAndText";
 
 interface reason {

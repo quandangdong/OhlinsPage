@@ -8,8 +8,6 @@ interface PostDetail {
 
 class Post extends React.PureComponent<{ PostData: PostDetail }> {
   render() {
-    console.log(this.props.PostData);
-
     return (
       <div>
         <div>
