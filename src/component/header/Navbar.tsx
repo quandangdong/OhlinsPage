@@ -1,14 +1,20 @@
 import React from "react";
 import { ohlinsLogo } from "../../img/index";
+import LoginForm from "../login/LoginForm";
 import LanguageList from "./languagePopUp/LanguageList";
 
 class Navbar extends React.PureComponent {
   state = {
     isLanguagePopUpOpen: false,
+    isLoginFormOpen: false,
   };
 
   handleShowLanguagePopUp = (): void => {
     this.setState({ isLanguagePopUpOpen: !this.state.isLanguagePopUpOpen });
+  };
+
+  handleShowLoginForm = (values: boolean): void => {
+    this.setState({ isLoginFormOpen: values });
   };
   render() {
     return (
@@ -45,8 +51,7 @@ class Navbar extends React.PureComponent {
                 onClick={this.handleShowLanguagePopUp}
               >
                 <svg
-                  className="w-6 h-6 my-auto mr-2"
-                  fill="currentColor"
+                  className="w-6 h-6 my-auto mr-2 fill-zinc-600"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -62,13 +67,20 @@ class Navbar extends React.PureComponent {
                 </div>
               </li>
               <li>
-                <button className="px-10 py-2 mx-2 rounded-lg bg-zinc-600 text-white text-2xl hover:bg-zinc-500 hover:scale-110">
+                <button
+                  className="px-10 py-2 mx-2 rounded-lg bg-zinc-600 text-white text-2xl hover:bg-zinc-500 hover:scale-110"
+                  onClick={() => this.handleShowLoginForm(true)}
+                >
                   Sign in
                 </button>
               </li>
             </ul>
           </div>
         </div>
+
+        {this.state.isLoginFormOpen ? (
+          <LoginForm onCloseClick={this.handleShowLoginForm} />
+        ) : null}
       </div>
     );
   }
